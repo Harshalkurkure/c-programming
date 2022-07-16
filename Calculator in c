@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int operand1,operand2,calculation;
+    char operator;
+    printf("Enter Values::");
+    scanf("%d%d",&operand1,&operand2);
+    printf("Select (+,-,*,/,%,^) operator::");
+    scanf("%s",&operator);
+    switch(operator)
+    {
+    case '+':
+        calculation=operand1+operand2;
+        printf("::calculation %d %c %d is =%d",operand1,operator, operand2,calculation);
+        break;
+
+    case '-':
+        calculation=operand1-operand2;
+        printf("::calculation %d %c %d is =%d",operand1,operator, operand2,calculation);
+        break;
+
+    case '*':
+        calculation=operand1*operand2;
+        printf("::calculation %d %c %d is =%d",operand1,operator, operand2,calculation);
+        break;
+
+    case '/':
+        calculation=operand1/operand2;
+        printf("::calculation %d %c %d is =%d",operand1,operator, operand2,calculation);
+        break;
+
+    case '%':
+        calculation=operand1%operand2;
+        printf("::calculation %d %c %d is =%d",operand1,operator, operand2,calculation);
+        break;
+
+    case '^':
+        calculation=pow(operand1,operand2);
+                    printf("::calculation %d %c %d is =%d",operand1,operator, operand2,calculation);
+        break;
+
+    default :
+        printf("Wrong Enter");
+
+        break;
+
+
+
+    }
+
+
+}
